@@ -1,0 +1,181 @@
+body {
+	font-family: sans-serif;
+	margin: 2em;
+	background-color: #f4f4f9;
+}
+
+.container {
+	max-width: 900px;
+	margin: auto;
+	background: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2em;
+}
+
+h1 {
+	color: #333;
+}
+
+.summary {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	border: 1px solid #ddd;
+	padding: 1.5em;
+	margin-bottom: 2em;
+	background-color: #e9ecef;
+	border-radius: 8px;
+}
+
+.summary-item h3 {
+	margin-top: 0;
+	color: #555;
+}
+
+.summary-income {
+	color: green;
+	font-weight: bold;
+}
+
+.summary-expense {
+	color: red;
+	font-weight: bold;
+}
+
+.summary-balance {
+	font-weight: bold;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 1em;
+}
+
+th,
+td {
+	padding: 12px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+th {
+	background-color: #007bff;
+	color: white;
+}
+
+.expense-amount {
+	color: red;
+}
+
+.income-amount {
+	color: green;
+}
+
+.add-button {
+	background-color: #28a745;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 1em;
+}
+
+.edit-button,
+.delete-button {
+	background-color: #17a2b8;
+	color: white;
+	border: none;
+	padding: 6px 10px;
+	cursor: pointer;
+	border-radius: 3px;
+	font-size: 0.8em;
+	margin-right: 5px;
+}
+
+.delete-button {
+	background-color: #dc3545;
+}
+
+/* Modal (Popup) styles */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+	background-color: #fff;
+	margin: 10% auto;
+	padding: 25px;
+	border: 1px solid #888;
+	width: 90%;
+	max-width: 500px;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close-button {
+	color: #aaa;
+	float: right;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.form-group {
+	margin-bottom: 1.5em;
+}
+
+label {
+	display: block;
+	margin-bottom: 0.5em;
+	font-weight: bold;
+}
+
+input[type="date"],
+input[type="text"],
+input[type="number"],
+select {
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+button[type="submit"] {
+	background-color: #007bff;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1em;
+	width: 100%;
+}
+
+button[type="submit"]:hover {
+	background-color: #0056b3;
+}
