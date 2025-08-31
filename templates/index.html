@@ -19,15 +19,15 @@
         <div class="summary">
             <div class="summary-item">
                 <h3>Income</h3>
-                <p class="summary-income" id="totalIncome">${{ "%.2f"|format(summary.income) }}</p>
+                <p class="summary-income" id="totalIncome">{{ summary.income }} Rs</p>
             </div>
             <div class="summary-item">
                 <h3>Expenses</h3>
-                <p class="summary-expense" id="totalExpenses">${{ "%.2f"|format(summary.expenses) }}</p>
+                <p class="summary-expense" id="totalExpenses">{{ summary.expenses }} Rs</p>
             </div>
             <div class="summary-item">
                 <h3>Net Balance</h3>
-                <p class="summary-balance" id="netBalance">${{ "%.2f"|format(summary.balance) }}</p>
+                <p class="summary-balance" id="netBalance">{{ summary.balance }} Rs</p>
             </div>
         </div>
 
@@ -43,7 +43,6 @@
                 </tr>
             </thead>
             <tbody id="transactions-table-body">
-                
             </tbody>
         </table>
 
@@ -163,7 +162,7 @@
                     <td>${item.date}</td>
                     <td>${item.description}</td>
                     <td>${item.category}</td>
-                    <td class="${amountColor}">Rs. ${item.amount.toFixed(2)}</td>
+                    <td class="${amountColor}">${item.amount} Rs</td>
                     <td>
                         <button class="edit-button" data-id="${item.id}">Edit</button>
                         <button class="delete-button" data-id="${item.id}">Delete</button>
