@@ -9,3 +9,4 @@ Notes:
 - Data is stored in /data/transactions.csv
 - Categories are in /data/categories.txt
 - This project is intentionally simple and written in a beginner style.
+# Simple-Expense-Tracker
